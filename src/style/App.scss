@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+   
+}
+
+body{
+    background: #FAF9FE;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+@import "./EditIntro";
+@import "./EditForm";
+@import "./SignInInfo";
+@import "./ToggleSwitch";
+
+
+
+
+
+
+
+
+
+
+
+
