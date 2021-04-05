@@ -16,14 +16,29 @@ span {
     color: #9b9b9c;
     font-weight: 500;
   }
-  img {
-    height: 10vh;
+  .profileImg{
+   
+    border:4px solid gray;
+    border-radius:50%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding:0.5rem;
+    margin: 1.5rem 0.4rem;
+    
+    
+
+  }
+
+  .img {
+    font-size: 3rem;
     object-fit: cover;
-    margin: 0.5rem 1rem;
+   
+    color:gray;
   }
 
   h5 {
-    margin: 0.5rem 1.5rem;
+    margin: 0rem 1.5rem;
     color: #f5a36a;
   }
 
@@ -34,15 +49,19 @@ span {
     label {
       color: #41168e;
       font-weight: 500;
+    
     }
 
     input {
       width: 40%;
-      padding: 0.6rem 1.2rem;
+      padding: 0.6rem 0rem;
+      padding-right:28rem;
       border-radius: 0.35rem;
       border: 2px solid #b7b7b7;
       color: #7e7e7e;
-      margin-left: 2.5rem;
+      margin-left: 8rem;
+      position: relative;
+      bottom:1.8rem;
       &:focus-within {
         outline: none;
       }
@@ -100,15 +119,15 @@ span {
       }
 
       .selectInfo {
-        width: auto;
+        width: 30vw;
         display: flex;
         #date {
-            margin-left: 4rem;
+            margin-left: 2rem;
           
         }
 
         #Birth {
-          margin-left: 11.7rem;
+          margin-left:5rem;
         }
 
     

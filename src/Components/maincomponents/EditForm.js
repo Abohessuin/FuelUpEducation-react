@@ -1,5 +1,7 @@
 import React from "react";
 import Avatar from "../../assets/images/avatar.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import SignInInfo from "./SignInInfo";
 const EditForm = () => {
   return (
@@ -9,7 +11,10 @@ const EditForm = () => {
       <div className="photoname">
         <div className="photo">
           <h4>Sarah William</h4>
-          <img src={Avatar} alt="avatar" />'<h5>change</h5>
+          <div className="profileImg">
+            <FontAwesomeIcon className="img" icon={faUser} />
+          </div>
+          <h5>change</h5>
         </div>
         <form>
           <label>Nick name</label>
@@ -22,7 +27,9 @@ const EditForm = () => {
         <form>
           <div className="infoContainer">
             <div>
-              <label>mail</label>
+              <label>
+                mailling Address <span>*</span>
+              </label>
             </div>
             <div>
               <input type="text" />
@@ -57,7 +64,7 @@ const EditForm = () => {
           <div className="infoContainer">
             <div>
               <label>
-                Birth Date <span>*</span>
+                Birth Date<span>*</span>
               </label>
             </div>
             <div className="selectInfo">
@@ -75,10 +82,10 @@ const EditForm = () => {
             <div>
               <label>
                 Gender<span>*</span>
-              </label>  
+              </label>
             </div>
             <div>
-            <select id="gender" name="Birth">
+              <select id="gender" name="Birth">
                 <option value="male">male</option>
                 <option value="female">female</option>
               </select>
@@ -92,7 +99,9 @@ const EditForm = () => {
         <form>
           <div className="infoContainer">
             <div>
-              <label>Board/University</label>
+              <label>
+                Board/University <span>*</span>
+              </label>
             </div>
             <div>
               <input type="text" />
@@ -151,6 +160,15 @@ const EditForm = () => {
 
           <div className="infoContainer">
             <div>
+              <label>Instgram</label>
+            </div>
+            <div>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div className="infoContainer">
+            <div>
               <label>Twitter</label>
             </div>
             <div>
@@ -159,7 +177,7 @@ const EditForm = () => {
           </div>
         </form>
       </div>
-     <SignInInfo/>
+      <SignInInfo />
     </div>
   );
 };

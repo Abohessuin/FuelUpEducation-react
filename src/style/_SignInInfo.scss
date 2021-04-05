@@ -23,9 +23,11 @@
     
             padding:0.5rem 24rem;
             display: flex;  
-            justify-content:space-between;          
+            justify-content:space-between;       
             .toSign{
+            
               width: 8rem;
+              cursor: pointer;
               margin-right:1rem;
               display: flex;
               justify-content:center;

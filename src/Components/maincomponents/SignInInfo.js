@@ -6,6 +6,7 @@ import {
   faUser,
   faQrcode,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 const SignInInfo = () => {
   return (
     <div className="SignInInfo">
@@ -18,30 +19,32 @@ const SignInInfo = () => {
         </div>
         <div>
           <div className="contentTools">
-            <div className="toSign">
-              <FontAwesomeIcon icon={faFingerprint} />
-              <h5>Fingerprint</h5>
-            </div>
-            
-            <ToggleSwitch/>
-          
+            <Link to="/fingerprint">
+              <div className="toSign">
+                <FontAwesomeIcon icon={faFingerprint} />
+                <h5>Fingerprint</h5>
+              </div>
+            </Link>
+
+            <ToggleSwitch />
           </div>
           <div className="contentTools">
-            <div className="toSign">
-              <FontAwesomeIcon icon={faUser} />
-              <h5>Face Id</h5>
-            </div>
-           <ToggleSwitch/>
-          
+            <Link to="/faceid">
+              <div className="toSign">
+                <FontAwesomeIcon icon={faUser} />
+                <h5>Face Id</h5>
+              </div>
+            </Link>
+            <ToggleSwitch />
           </div>
           <div className="contentTools">
-            <div className="toSign">
-              <FontAwesomeIcon icon={faQrcode} />
-              <h5>QR Code</h5>
-            </div>
-            
-             <ToggleSwitch/>
-          
+            <Link to="/qrcode">
+              <div className="toSign">
+                <FontAwesomeIcon icon={faQrcode} />
+                <h5>QR Code</h5>
+              </div>
+            </Link>
+            <ToggleSwitch />
           </div>
         </div>
       </div>
