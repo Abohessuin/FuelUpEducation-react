@@ -138,3 +138,20 @@ span {
     }
   }
 }
+
+.updatebutt{
+  
+  width:51%;
+  display:flex;
+  justify-content:flex-end;
+  button{
+    background-color:#F3802C;
+    border-radius:2rem;
+    padding:0.4rem 1.7rem;
+    border:none;
+  }
+}
+
+.footer{
+  height:20vh;
+}

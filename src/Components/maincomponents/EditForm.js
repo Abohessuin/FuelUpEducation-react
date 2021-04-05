@@ -178,6 +178,11 @@ const EditForm = () => {
         </form>
       </div>
       <SignInInfo />
+      <div class="footer">
+        <div className="updatebutt">
+          <button>Update</button>
+        </div>
+      </div>
     </div>
   );
 };
